@@ -1,0 +1,60 @@
+.taskListWrap {
+    width: 100%;
+}
+
+.taskListWrap__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taskListWrap__actionWrap__button {
+    background-color: #ff4757;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+}
+
+.taskListWrap__actionWrap {
+    display: flex;
+    gap: 10px;
+}
+
+.taskListWrap__actionWrap__button__active {
+    background-color: #fb0015;
+}
+
+@media (max-width: 960px) {
+    .taskListWrap__actionWrap__button {
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .taskListWrap__actionWrap {
+        gap: 5px;
+    }
+
+    .taskListWrap__info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .taskListWrap__actionWrap__isDone {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 370px) {
+    .taskListWrap__actionWrap__button {
+        width: 171px;
+    }
+
+    .taskListWrap__actionWrap {
+        flex-direction: column;
+    }
+
+}
